@@ -1,0 +1,60 @@
+@import "../variables";
+
+.pre-sale__name {
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 2rem;
+	font-size: 1.4rem;
+}
+
+.pre-sale__time {
+	display: flex;
+}
+
+.pre-sale__time-item {
+	text-align: center;
+
+	&:not(:last-child) {
+		margin-right: 1.5rem;
+	}
+}
+
+.pre-sale__time-number {
+	display: block;
+	margin-bottom: .5rem;
+	font-size: 4rem;
+}
+
+.pre-sale__time-name {
+	display: block;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+}
+
+.pre-sale__button {
+	font-size: 1.6rem;
+}
+
+.pre-sale__button-text {
+	font-weight: 900;
+	margin-left: .5rem;
+	text-decoration: underline;
+}
+
+@media (max-width: 1169px) {
+	.pre-sale {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.pre-sale__inner {
+		margin-right: 18rem;
+	}
+}
+
+@media (min-width: 1170px) {
+	.pre-sale__time {
+		margin-bottom: 3rem;
+	}
+}

@@ -1,0 +1,11 @@
+@import "../variables";
+
+.link {
+	color: $green;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+		color: inherit;
+	}
+}

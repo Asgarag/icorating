@@ -1,0 +1,40 @@
+@import "../variables";
+
+.button {
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	font-family: inherit;
+	cursor: pointer;
+
+	&:focus {
+		outline: none;
+	}
+
+	&--small {
+		border-radius: 3px;
+		padding: 2rem 1.5rem 2rem 1.4rem;
+	}
+
+	&--middle {
+		border-radius: 3px;
+		padding: 1.5rem 4.6rem;
+	}
+
+	&--big {
+		border-radius: 3px;
+		padding: 1.5rem 6.4rem;
+	}
+
+	&--green {
+		background: $green;
+		color: $black;
+		text-transform: uppercase;
+
+		&:hover,
+		&:focus {
+			background: darken($green, 20%);
+			box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.25);
+		}
+	}
+}

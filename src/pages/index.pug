@@ -1,0 +1,31 @@
+extends layout/layout
+
+block content
+	div.preview#preview
+		div.container.preview__container
+			picture.preview__img
+				source(srcset="images/map.png", media="(min-width: 1170px)")
+				img(src="images/map-mobile.png", alt="Map")
+			div.preview__slogan
+				span.preview__slogan-text Работающий проект
+				span.preview__slogan-text Real team
+				span.preview__slogan-text Exciting perspectives
+			div.pre-sale.preview__pre-sale
+				div.pre-sale__inner
+					span.pre-sale__name Till pre-sale end
+					div.pre-sale__time
+						div.pre-sale__time-item
+							span.pre-sale__time-number 10
+							span.pre-sale__time-name days
+						div.pre-sale__time-item
+							span.pre-sale__time-number 19
+							span.pre-sale__time-name hours
+						div.pre-sale__time-item
+							span.pre-sale__time-number 34
+							span.pre-sale__time-name min
+						div.pre-sale__time-item
+							span.pre-sale__time-number 15
+							span.pre-sale__time-name sec
+				button.button.button--small.button--green.pre-sale__button(type="button")
+					span Buy tokens at
+					span.pre-sale__button-text 0.1 ETH
