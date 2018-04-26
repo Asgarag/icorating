@@ -1,0 +1,14 @@
+@import "../variables";
+
+
+@media (max-width: 899px) {
+	.distribution__token-distribution {
+		margin-bottom: 8rem;
+	}
+}
+
+@media (min-width: 900px) {
+	.distribution {
+		display: flex;
+	}
+}

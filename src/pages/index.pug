@@ -1,31 +1,275 @@
 extends layout/layout
 
 block content
-	div.preview#preview
-		div.container.preview__container
-			picture.preview__img
-				source(srcset="images/map.png", media="(min-width: 1170px)")
-				img(src="images/map-mobile.png", alt="Map")
-			div.preview__slogan
-				span.preview__slogan-text Работающий проект
-				span.preview__slogan-text Real team
-				span.preview__slogan-text Exciting perspectives
-			div.pre-sale.preview__pre-sale
-				div.pre-sale__inner
-					span.pre-sale__name Till pre-sale end
-					div.pre-sale__time
-						div.pre-sale__time-item
-							span.pre-sale__time-number 10
-							span.pre-sale__time-name days
-						div.pre-sale__time-item
-							span.pre-sale__time-number 19
-							span.pre-sale__time-name hours
-						div.pre-sale__time-item
-							span.pre-sale__time-number 34
-							span.pre-sale__time-name min
-						div.pre-sale__time-item
-							span.pre-sale__time-number 15
-							span.pre-sale__time-name sec
-				button.button.button--small.button--green.pre-sale__button(type="button")
-					span Buy tokens at
-					span.pre-sale__button-text 0.1 ETH
+	-
+		var plans1 = ['To complete the creation of a social network for ICO, investors, experts and analysts',
+		'Complete the work on a fully functional information portal',
+		'To launch voting system through smart contracts (now we use blockchain records)',
+		'To expand the range of expert services and ICO rating',
+		'To create new ICO statistical services',
+		'To start a production of a new class of analytical materials related to ICO']
+		var plans2 = ['Create bots to get information from the knowledge base ICOVoting through messengers and social networks',
+		'To translate our website into a large number of languages',
+		'To create an analytical Youtube channel devoted to the ICO, cryptocurrency and blockchain world.',
+		'Marketing and active promotion around the world. Cooperation with the largest information and rating agencies: Bloomberg, Reuters, Standard & Poor\'s, Fitch Ratings, Moody\'s Corporation, CNBC, etc.',
+		'To create the blockchain platform VotingBase focused on the specifics of expert voting.']
+		var team = [
+		{
+		name: 'Eduard Lanchev',
+		img: 'images/lanchev.jpg',
+		alt1: 'Avatar of Eduard Lanchev',
+		post: 'CEO&Founder'
+		},
+		{
+		name: 'Oleg Zvonov',
+		img: 'images/zvonov.jpg',
+		alt1: 'Avatar of Oleg Zvonov',
+		post: 'General Partner of ICOVoting'
+		},
+		{
+		name: 'Yaroslav Zvonov',
+		img: 'images/zvonov_ya.jpg',
+		alt1: 'Avatar of Yaroslav Zvonov',
+		post: 'Software developer manager'
+		},
+		{
+		name: 'Elena Martynova',
+		img: 'images/martynova.jpg',
+		alt1: 'Avatar of Elena Martynova',
+		post: 'Development director'
+		},
+		{
+		name: 'Kirill Zvonov',
+		img: 'images/zvonov_kirill.jpg',
+		alt1: 'Avatar of Kirill Zvonov',
+		post: 'Developer'
+		},
+		{
+		name: 'Olga Zvonov',
+		img: 'images/zvonova_olga.jpg',
+		alt1: 'Avatar of Olga Zvonov',
+		post: 'Frontend'
+		},
+		{
+		name: 'Irina Nefedova',
+		img: 'images/nefedova.jpg',
+		alt1: 'Avatar of Irina Nefedova',
+		post: 'UI/UX designer'
+		},
+		{
+		name: 'Alexandra Nesterova',
+		img: 'images/nesterova.jpg',
+		alt1: 'Avatar of Alexandra Nesterova',
+		post: 'Community manager'
+		}
+		]
+	div.preview
+		div.container
+			div.preview__container
+				picture.preview__img
+					source(srcset="images/map.png", media="(min-width: 1170px)")
+					img(src="images/map-mobile.png", alt="Map")
+				div.preview__slogan
+					span.preview__slogan-text Работающий проект
+					span.preview__slogan-text Real team
+					span.preview__slogan-text Exciting perspectives
+				div.pre-sale.preview__pre-sale
+					div.pre-sale__inner
+						span.pre-sale__name Till pre-sale end
+						div.pre-sale__time
+							div.pre-sale__time-item
+								span.pre-sale__time-number 10
+								span.pre-sale__time-name days
+							div.pre-sale__time-item
+								span.pre-sale__time-number 19
+								span.pre-sale__time-name hours
+							div.pre-sale__time-item
+								span.pre-sale__time-number 34
+								span.pre-sale__time-name min
+							div.pre-sale__time-item
+								span.pre-sale__time-number 15
+								span.pre-sale__time-name sec
+					a.button.button--green.pre-sale__link(href="#")
+						span Buy tokens at
+						span.button__underline-text 0.1 ETH
+	section.section.about.container#about
+		div.about__container
+			div.about__inner
+				h1.title.title-m.about__title ICOVoting
+				div.about__description
+					p.
+						ICOVoting - a unique information and rating platform on ICO startups for crypto investors, experts, analysts, journalists and people
+						involved into crypto activities from all over the world. The project team developed, implemented and successfully operates a unique system of open
+						rating ICO projects through expert voting on the blockchain technology.
+					p.
+						ICOVoting was founded in December 2017.
+			div.about__in-numbers
+				span.about__text At the moment ICOVoting is:
+				div.about__amounts
+					div.about__amount
+						span.about__number 6 800
+						span.about__amount-name registered users
+					div.about__amount
+						span.about__number 10 000
+						span.about__amount-name unique users per month
+					div.about__amount
+						span.about__number 1 500
+						span.about__amount-name registered ICO
+		div.about__wrapper
+			span.about__main The trust of users and crypto-investors from around the world!
+			a.button.button--middle.button--green.about__link(href="#")
+				span visit
+				span.button__underline-text icovoting.com
+		div.ico.about__ico
+			div.ico__container
+				h2.title.section__title.ico__title Why do we launch an ICO?
+				div.ico__description
+					p.
+						We want to make our project better and more useful for everyone.
+						We are going to expand the existing services and add some more, so that more people can use ICOVoting in their work.
+						We also want to launch an active promotion on the Internet and mass media.
+			div.ico__container
+				h2.title.section__title.ico__title What does our token give?
+				div.ico__description
+					p.
+						Our token gives an opportunity to purchase advertising on our website and on the partners' websites.
+						Our token - an advertisment on our website and it can be exchanged for cryptocurrency at the prices of the advertising market.
+						Our token allows you to invest in expensive advertising of tomorrow at very attractive prices of today.
+						We develop the project with your help, increasing website traffic that leads to higher prices for advertising on ICOVoting.
+	section.section.container.plans#plans
+		h2.title.section__title.plans__title Our plans:
+		div.plans__inner
+			ul.list.plans__list
+				for elem in plans1
+					li.plans__list-item
+						svg.plans__icon
+							use(xlink:href="images/sprite.svg#icon-circle")
+						div.plans__text
+							p #{elem}
+			ul.list.plans__list
+				for elem in plans2
+					li.plans__list-item
+						svg.plans__icon
+							use(xlink:href="images/sprite.svg#icon-circle")
+						div.plans__text
+							p #{elem}
+	section.section.container.token#token
+		h2.title.section__title.token__title How to spend tokens:
+		div.token__container
+			div.token__sales
+				div.token__sale
+					span.token__sale-text Buy advertising on
+						a.link.token__sale-link ICOVoting.com
+				div.token__sale
+					span.token__sale-text Exchange for cryptocurrency in our exchanger
+					span.token__sale-date (this summer)
+				div.token__sale
+					span.token__sale-text Sell on the stock exchange
+					span.token__sale-date (this summer)
+			div.token__buy
+				div.token__buy-time
+					div.token__buy-time-item
+						span.token__buy-time-number 10
+						span.token__buy-time-name days
+					div.token__buy-time-item
+						span.token__buy-time-number 19
+						span.token__buy-time-name hours
+					div.token__buy-time-item
+						span.token__buy-time-number 34
+						span.token__buy-time-name min
+					div.token__buy-time-item
+						span.token__buy-time-number 15
+						span.token__buy-time-name sec
+				a.button.button--green.button--small.token__buy-link(href="#")
+					span Buy token right now at
+					span.button__underline-text 0.1 ETH
+	section.section.container.token-sale#token-sale
+		h2.title.section__title.token-sale__title Token sale stages
+		div.token-sale__container
+			div.token-sale__inner
+				div.token-sale__stage
+					span.token-sale__stage-name 1 stage
+					span.token-sale-date - 16.04.18 - 01.05.18
+					span.token-sale-text Price 0.1 ETH - 1 000 VTS
+					span.token-sale-text Total supply - 500 000 VTS
+					svg.token-sale__icon
+						use(xlink:href="images/sprite.svg#icon-right-arrow")
+				div.token-sale__stage
+					span.token-sale__stage-name 2 stage
+					span.token-sale-date - 10.05.18 - 23.05.18
+					span.token-sale-text Price 0.15ETH - 1 000 VTS
+					span.token-sale-text Total supply - 3 000 000 VTS
+					svg.token-sale__icon
+						use(xlink:href="images/sprite.svg#icon-right-arrow")
+			div.token-sale__inner
+				div.token-sale__stage
+					span.token-sale__stage-name 3 stage
+					span.token-sale-date - 24.05.18 - 06.06.18
+					span.token-sale-text Price 0.25ETH - 1 000 VTS
+					span.token-sale-text Total supply - 4 500 000 VTS
+					svg.token-sale__icon
+						use(xlink:href="images/sprite.svg#icon-right-arrow")
+				div.token-sale__goal
+					span.token-sale__goal-text Goal
+					span.token-sale__goal-amount 1500 ETH
+	section.section.container.distribution
+		article.token-distribution.distribution__token-distribution#token-distribution
+			h2.title.section__title.token-distribution__title Token distribution
+			span.token-distribution__supply Total supply
+				span.token-distribution__supply-amount 10 000 000 VTS
+			img.token-distribution__diagram(src="images/token.png", alt="Token diagram")
+		article.funds-distribution.distribution__funds-distribution#funds-distribution
+			h2.title.section__title.funds-distribution__title Funds distribution
+			img.funds-distribution__diagram(src="images/funds.png", alt="Funds diagram")
+	section.section.container.road
+		h2.title.section__title.road__title Road map
+		div.road__container
+			div.road__stage
+				div.road__stage-container
+					span.road__stage-name ICOVoting 2.0
+					span.road__stage-date II quarter of 2018 -
+					span.road__stage-eth 150 ETH
+				svg.road__right-icon
+					use(xlink:href="images/sprite.svg#icon-right-arrow")
+				svg.road__down-icon
+					use(xlink:href="images/sprite.svg#icon-arrow-down")
+				div.road__description
+					p Expansion of services. Marketing, promotion
+			div.road__stage
+				div.road__stage-container
+					span.road__stage-name ICOVoting 3.0
+					span.road__stage-date III quarter of 2018 -
+					span.road__stage-eth 350 ETH
+				svg.road__right-icon
+					use(xlink:href="images/sprite.svg#icon-right-arrow")
+				svg.road__down-icon
+					use(xlink:href="images/sprite.svg#icon-arrow-down")
+				div.road__description
+					p Social network + Analytical portal. Marketing, promotion
+			div.road__stage
+				div.road__stage-container
+					span.road__stage-name ICOVoting 4.0
+					span.road__stage-date IV quarter of 2018 -
+					span.road__stage-eth 500 ETH
+				svg.road__right-icon
+					use(xlink:href="images/sprite.svg#icon-right-arrow")
+				svg.road__down-icon
+					use(xlink:href="images/sprite.svg#icon-arrow-down")
+				div.road__description
+					p Interactive services. Multilingual platform. Marketing, promotion
+			div.road__stage
+				div.road__stage-container
+					span.road__stage-name VotingBase
+					span.road__stage-date I quarter of 2019 -
+					span.road__stage-eth 500 ETH
+				div.road__description
+					p Development of the blockchain platform VotingBase
+	section.section.container.team
+		h2.title.section__title.team__title Team
+		span.team__description We are a real team. We set real goals and achieve them.
+		div.owl-carousel.team__owl-carousel
+			for elem in team
+				div.owl-carousel__item
+					img.owl-carousel__avatar(src=elem.img, alt=elem.alt1)
+					span.owl-carousel__name #{elem.name}
+					span.owl-carousel__post #{elem.post}

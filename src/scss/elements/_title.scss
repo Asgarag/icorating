@@ -5,39 +5,12 @@
 	margin-bottom: 0;
 }
 
-.title--line {
-	position: relative;
-	padding-bottom: 1.2rem;
-
-	&::after {
-		content: "";
-		width: calc(100% - 20px);
-		max-width: 228px;
-		position: absolute;
-		bottom: 2px;
-		left: 20px;
-		height: 1px;
-		background-color: $gray;
-	}
-
-	&::before {
-		content: "";
-		position: absolute;
-		width: 7px;
-		height: 7px;
-		bottom: 0;
-		left: 2px;
-		background-color: $gray;
-		transform: rotate(45deg);
-	}
+.title--l {
+	font-size: 3.6rem;
 }
 
 .title--m {
-	font-size: 1.8rem;
-}
-
-.title--ms {
-	font-size: 1.6rem;
+	font-size: 3rem;
 }
 
 .title--s {

@@ -1,0 +1,23 @@
+@import "../variables";
+
+.section:not(:last-child) {
+	margin-bottom: 9rem;
+}
+
+.section__title {
+	color: $green;
+	font-weight: 100;
+}
+
+@media (max-width: 767px) {
+	.section__title {
+		font-size: 3rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.section__title {
+		font-size: 3.6rem;
+	}
+}
+

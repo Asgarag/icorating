@@ -1,0 +1,13 @@
+@import "../variables";
+
+@media (max-width: 899px) {
+	.funds-distribution__title {
+		margin-bottom: 3.5rem;
+	}
+}
+
+@media (min-width: 900px) {
+	.funds-distribution__title {
+		margin-bottom: 7.5rem;
+	}
+}

@@ -1,0 +1,122 @@
+@import "../variables";
+
+.token-sale__title {
+	color: $green;
+	font-weight: 100;
+	margin-bottom: 2.5rem;
+}
+
+.token-sale__stage-name {
+	color: $green;
+	margin-right: .5rem;
+}
+
+.token-sale__stage {
+	position: relative;
+}
+
+.token-sale__icon {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 39px;
+	height: 60px;
+	fill: #283643;
+}
+
+.token-sale-text {
+	display: block;
+	margin-top: 1rem;
+}
+
+.token-sale__goal {
+	background-color: $light-black;
+	box-shadow: 0.1px 2px 18.1px 2.9px rgba(9, 12, 18, 0.24);
+	padding: 2.5rem 3.5rem;
+}
+
+.token-sale__goal-text {
+	font-size: 3rem;
+	margin-right: .5rem;
+}
+
+.token-sale__goal-amount {
+	font-size: 3rem;
+	color: $green;
+}
+
+@media (max-width: 540px) {
+	.token-sale__container {
+		text-align: center;
+	}
+
+	.token-sale__icon {
+		display: none;
+	}
+
+	.token-sale__stage:not(:last-child) {
+		margin-bottom: 4rem;
+	}
+}
+
+@media (min-width: 541px) {
+	.token-sale__inner {
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media (min-width: 541px) and (max-width: 1169px) {
+	.token-sale__inner {
+		display: flex;
+		align-items: center;
+	}
+
+	.token-sale__stage:not(:last-of-type) {
+		margin-right: 2.5rem;
+		padding-right: 6rem;
+	}
+}
+
+@media (min-width: 800px) and (max-width: 1169px) {
+	.token-sale__container {
+		flex-direction: column;
+		align-items: center;
+		display: flex;
+	}
+
+	.token-sale__inner:not(:last-child) {
+		margin-bottom: 4rem;
+	}
+
+	.token-sale__stage:last-of-type {
+		.token-sale__icon {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 1169px) {
+
+	.token-sale__inner:not(:last-child) {
+		margin-bottom: 4rem;
+	}
+
+	.token-sale__stage:last-of-type {
+		.token-sale__icon {
+			display: none;
+		}
+	}
+}
+
+@media (min-width: 1170px) {
+	.token-sale__stage {
+		margin-right: 2.5rem;
+		padding-right: 6rem;
+	}
+
+	.token-sale__container {
+		display: flex;
+	}
+}

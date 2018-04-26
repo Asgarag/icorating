@@ -1,0 +1,22 @@
+@import "../variables";
+
+.ico__title {
+	margin-bottom: 2.5rem;
+}
+
+@media (max-width: 909px) {
+	.ico__container:not(:last-child) {
+		margin-bottom: 6rem;
+	}
+}
+
+@media (min-width: 910px) {
+	.ico {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.ico__container {
+		width: 48%;
+	}
+}
