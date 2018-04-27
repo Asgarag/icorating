@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+    <title>ICOVoting</title>
   </head>
   <body>
     <div class="page">
@@ -21,14 +21,14 @@
                     </svg>
                   </button>
                 </li>
-                <li class="menu__list-item"><a class="menu__link" href="#">About</a></li>
-                <li class="menu__list-item"><a class="menu__link" href="#">Plans</a></li>
-                <li class="menu__list-item"><a class="menu__link" href="#">Our token</a></li>
-                <li class="menu__list-item"><a class="menu__link" href="#">Token sale</a></li>
-                <li class="menu__list-item"><a class="menu__link" href="#">Token distribution</a></li>
-                <li class="menu__list-item"><a class="menu__link" href="#">Funds distribution</a></li>
-                <li class="menu__list-item"><a class="menu__link" href="#">Road map</a></li>
-                <li class="menu__list-item"><a class="menu__link" href="#">Team</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#about">About</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#plans">Plans</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#token">Our token</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#token-sale">Token sale</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#token-distribution">Token distribution</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#funds-distribution">Funds distribution</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#road">Road map</a></li>
+                <li class="menu__list-item"><a class="menu__link" href="#team">Team</a></li>
               </ul><a class="menu__link-pdf" href="#">Whitepaper</a>
               <button class="button menu__switch" type="button">
                 <svg class="menu__icon">
@@ -79,7 +79,7 @@
               </div>
             </div>
           </div>
-          <div class="about__wrapper"><span class="about__main">The trust of users and crypto-investors from around the world!</span><a class="button button--middle button--green about__link" href="#"><span>visit</span><span class="button__underline-text">icovoting.com</span></a></div>
+          <div class="about__wrapper"><span class="about__main">The trust of users and crypto-investors from around the world!</span><a class="button button--big button--green about__link" href="https://icovoting.com" target="_blank"><span>visit</span><span class="button__underline-text">icovoting.com</span></a></div>
           <div class="ico about__ico">
             <div class="ico__container">
               <h2 class="title section__title ico__title">Why do we launch an ICO?</h2>
@@ -205,7 +205,7 @@
           <h2 class="title section__title token__title">How to spend tokens:</h2>
           <div class="token__container">
             <div class="token__sales">
-              <div class="token__sale"><span class="token__sale-text">Buy advertising on<a class="link token__sale-link">ICOVoting.com</a></span></div>
+              <div class="token__sale"><span class="token__sale-text">Buy advertising on<a class="link token__sale-link" href="https://icovoting.com" target="_blank">ICOVoting.com</a></span></div>
               <div class="token__sale"><span class="token__sale-text">Exchange for cryptocurrency in our exchanger</span><span class="token__sale-date">(this summer)</span></div>
               <div class="token__sale"><span class="token__sale-text">Sell on the stock exchange</span><span class="token__sale-date">(this summer)</span></div>
             </div>
@@ -252,7 +252,7 @@
             <h2 class="title section__title funds-distribution__title">Funds distribution</h2><img class="funds-distribution__diagram" src="images/funds.png" alt="Funds diagram">
           </article>
         </section>
-        <section class="section container road">
+        <section class="section container road" id="road">
           <h2 class="title section__title road__title">Road map</h2>
           <div class="road__container">
             <div class="road__stage">
@@ -299,7 +299,7 @@
             </div>
           </div>
         </section>
-        <section class="section container team">
+        <section class="section container team" id="team">
           <h2 class="title section__title team__title">Team</h2><span class="team__description">We are a real team. We set real goals and achieve them.</span>
           <div class="owl-carousel team__owl-carousel">
             <div class="owl-carousel__item"><img class="owl-carousel__avatar" src="images/lanchev.jpg" alt="Avatar of Eduard Lanchev"><span class="owl-carousel__name">Eduard Lanchev</span><span class="owl-carousel__post">CEO&amp;Founder</span></div>
@@ -311,9 +311,44 @@
             <div class="owl-carousel__item"><img class="owl-carousel__avatar" src="images/nefedova.jpg" alt="Avatar of Irina Nefedova"><span class="owl-carousel__name">Irina Nefedova</span><span class="owl-carousel__post">UI/UX designer</span></div>
             <div class="owl-carousel__item"><img class="owl-carousel__avatar" src="images/nesterova.jpg" alt="Avatar of Alexandra Nesterova"><span class="owl-carousel__name">Alexandra Nesterova</span><span class="owl-carousel__post">Community manager</span></div>
           </div>
+          <div class="team__fundery"><span class="team__fundery-text">Более подробную информацию по нашей компании, которая создала ICOVoting, вы можете найти на сайте FUNDERY Ltd.</span><a class="link team__fundery__link" href="http://fundery.ru">fundery.ru</a></div>
         </section>
       </div>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__info">
+            <div class="footer__logobox"><img class="footer__logo" src="images/footer__logo.png" alt="Fundery"><span class="footer__logo-text">Always Above Average</span></div>
+            <div class="footer__description">
+              <p>We expressly point out that the service, features and functionality available to users of this web site (hereinafter - Users), does not affect their actions and decisions. Using the service , features and functionality of this web site any person acts solely on their own, in their own interests, accepting all the costs, risks and consequences, directly or indirectly connected with the use of this web site.</p>
+            </div>
+            <div class="footer__contacts"><a class="footer__email" href="mailto:info@icovoting.com" target="_blank">info@icovoting.com</a>
+              <div class="social footer__social"><a class="social__link" href="#" target="_blank">
+                  <svg class="social__icon">
+                    <use xlink:href="images/sprite.svg#icon-medium"></use>
+                  </svg></a><a class="social__link" href="https://twitter.com/ICOVoting_com" target="_blank">
+                  <svg class="social__icon">
+                    <use xlink:href="images/sprite.svg#icon-twitter"></use>
+                  </svg></a><a class="social__link" href="https://t.me/ICOVoting_news" target="_blank">
+                  <svg class="social__icon">
+                    <use xlink:href="images/sprite.svg#icon-telegram"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+          <form class="footer__form" action="#" name="feedback" method="post"><span class="footer__form-hint">Contact the administrator</span>
+            <label class="field field--hidden-hint field--gray field--l footer__field">
+              <input class="field__input" name="name" placeholder="Name" required>
+            </label>
+            <label class="field field--hidden-hint field--gray field--l footer__field">
+              <input class="field__input" name="email" type="email" placeholder="Email" required>
+            </label>
+            <label class="field field--hidden-hint field--gray field--l footer__field">
+              <textarea class="textarea field__input footer__textarea" name="message" placeholder="Message" required></textarea>
+            </label>
+            <button class="button footer__form-button">Send to the administrator</button>
+          </form>
+        </div>
+        <div class="footer__copyright"><span class="footer__copyright-text">© 2017–2018 Fundery</span></div>
+      </footer>
     </div>
     <script src="js/index.js"></script>
   </body>

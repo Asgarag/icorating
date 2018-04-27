@@ -1,1 +1,32 @@
 footer.footer
+	div.container.footer__container
+		div.footer__info
+			div.footer__logobox
+				img.footer__logo(src="images/footer__logo.png", alt="Fundery")
+				span.footer__logo-text Always Above Average
+			div.footer__description
+				p.
+					We expressly point out that the service, features and functionality available to users of this web site (hereinafter - Users), does not affect their actions and decisions. Using the service , features and functionality of this web site any person acts solely on their own, in their own interests, accepting all the costs, risks and consequences, directly or indirectly connected with the use of this web site.
+			div.footer__contacts
+				a.footer__email(href="mailto:info@icovoting.com", target="_blank") info@icovoting.com
+				div.social.footer__social
+					a.social__link(href="#", target="_blank")
+						svg.social__icon
+							use(xlink:href="images/sprite.svg#icon-medium")
+					a.social__link(href="https://twitter.com/ICOVoting_com", target="_blank")
+						svg.social__icon
+							use(xlink:href="images/sprite.svg#icon-twitter")
+					a.social__link(href="https://t.me/ICOVoting_news", target="_blank")
+						svg.social__icon
+							use(xlink:href="images/sprite.svg#icon-telegram")
+		form.footer__form(action="#", name="feedback", method="post")
+			span.footer__form-hint Contact the administrator
+			label.field.field--hidden-hint.field--gray.field--l.footer__field
+				input.field__input(name="name", placeholder="Name", required)
+			label.field.field--hidden-hint.field--gray.field--l.footer__field
+				input.field__input(name="email", type="email", placeholder="Email", required)
+			label.field.field--hidden-hint.field--gray.field--l.footer__field
+				textarea.textarea.field__input.footer__textarea(name="message", placeholder="Message", required)
+			button.button.footer__form-button Send to the administrator
+	div.footer__copyright
+		span.footer__copyright-text © 2017–2018 Fundery

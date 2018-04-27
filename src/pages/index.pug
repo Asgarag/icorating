@@ -117,7 +117,7 @@ block content
 						span.about__amount-name registered ICO
 		div.about__wrapper
 			span.about__main The trust of users and crypto-investors from around the world!
-			a.button.button--middle.button--green.about__link(href="#")
+			a.button.button--big.button--green.about__link(href="https://icovoting.com", target="_blank")
 				span visit
 				span.button__underline-text icovoting.com
 		div.ico.about__ico
@@ -159,7 +159,7 @@ block content
 			div.token__sales
 				div.token__sale
 					span.token__sale-text Buy advertising on
-						a.link.token__sale-link ICOVoting.com
+						a.link.token__sale-link(href="https://icovoting.com", target="_blank") ICOVoting.com
 				div.token__sale
 					span.token__sale-text Exchange for cryptocurrency in our exchanger
 					span.token__sale-date (this summer)
@@ -221,7 +221,7 @@ block content
 		article.funds-distribution.distribution__funds-distribution#funds-distribution
 			h2.title.section__title.funds-distribution__title Funds distribution
 			img.funds-distribution__diagram(src="images/funds.png", alt="Funds diagram")
-	section.section.container.road
+	section.section.container.road#road
 		h2.title.section__title.road__title Road map
 		div.road__container
 			div.road__stage
@@ -264,7 +264,7 @@ block content
 					span.road__stage-eth 500 ETH
 				div.road__description
 					p Development of the blockchain platform VotingBase
-	section.section.container.team
+	section.section.container.team#team
 		h2.title.section__title.team__title Team
 		span.team__description We are a real team. We set real goals and achieve them.
 		div.owl-carousel.team__owl-carousel
@@ -273,3 +273,6 @@ block content
 					img.owl-carousel__avatar(src=elem.img, alt=elem.alt1)
 					span.owl-carousel__name #{elem.name}
 					span.owl-carousel__post #{elem.post}
+		div.team__fundery
+			span.team__fundery-text Более подробную информацию по нашей компании, которая создала ICOVoting, вы можете найти на сайте FUNDERY Ltd.
+			a.link.team__fundery__link(href="http://fundery.ru") fundery.ru

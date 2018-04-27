@@ -1,0 +1,25 @@
+@import "../variables";
+
+.social {
+	display: flex;
+}
+
+.social__link {
+	text-decoration: none;
+	transition: transform .4s;
+
+	&:not(:last-child) {
+		margin-right: 1.5rem;
+	}
+
+	&:hover, &:focus {
+		transform: translateY(-5px);
+	}
+
+}
+
+.social__icon {
+	width: 18px;
+	height: 18px;
+	fill: $light-black;
+}

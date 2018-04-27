@@ -230,29 +230,35 @@
 
 .owl-prev {
 	position: absolute;
-	width: 40px;
+	width: 30px;
 	height: 40px;
-	left: 0;
+	left: -50px;
 	top: 43%;
 	transform: translateY(-50%);
-	background-image: url("../images/left-arrow-sl.svg");
+	background: url("../images/left-arrow-sl.svg");
+	background-size: cover;
+	transition: transform .4s;
 
-	&:hover {
-		opacity: 0.8;
+	&:hover, &:focus {
+		outline: none;
+		transform: translate(-5px, -50%);
 	}
 }
 
 .owl-next {
 	position: absolute;
-	right: 0;
+	right: -40px;
 	top: 43%;
 	transform: translateY(-50%);
-	width: 40px;
+	width: 30px;
 	height: 40px;
-	background-image: url("../images/right-arrow-sl.svg");
+	background: url("../images/right-arrow-sl.svg");
+	background-size: cover;
+	transition: transform .4s;
 
-	&:hover {
-		opacity: 0.8;
+	&:hover, &:focus {
+		outline: none;
+		transform: translate(5px, -50%);
 	}
 }
 

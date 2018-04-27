@@ -4,14 +4,23 @@ header.header
 		nav.menu.header__menu
 			ul.list.menu__list
 				-
-					var menu = ['About', 'Plans', 'Our token', 'Token sale', 'Token distribution', 'Funds distribution', 'Road map', 'Team']
+					var menu = [
+					{name: 'About', link: '#about'},
+					{name: 'Plans', link: '#plans'},
+					{name: 'Our token', link: '#token'},
+					{name: 'Token sale', link: '#token-sale'},
+					{name: 'Token distribution', link: '#token-distribution'},
+					{name: 'Funds distribution', link: '#funds-distribution'},
+					{name: 'Road map', link: '#road'},
+					{name: 'Team', link: '#team'}
+					]
 				li.menu__list-item
 					button.button.menu__close
 						svg.menu__close-icon
 							use(xlink:href="images/sprite.svg#icon-close")
 				for elem in menu
 					li.menu__list-item
-						a.menu__link(href="#") #{elem}
+						a.menu__link(href=elem.link) #{elem.name}
 			a.menu__link-pdf(href="#") Whitepaper
 			button.button.menu__switch(type="button")
 				svg.menu__icon
