@@ -13,16 +13,9 @@
 
 .menu__link {
 	text-decoration: none;
-	color: $white;
-	font-size: 1.4rem;
-
-	&:hover {
-		color: $green;
-	}
 }
 
 .menu__link-pdf {
-	font-size: 1.4rem;
 	color: $green;
 	text-decoration: none;
 
@@ -121,6 +114,10 @@
 		height: 20px;
 		fill: $green;
 	}
+
+	.menu__link-pdf {
+		font-size: 2.4rem;
+	}
 }
 
 @media (min-width: 950px) {
@@ -144,5 +141,18 @@
 		&:first-child {
 			display: none;
 		}
+	}
+
+	.menu__link {
+		color: $white;
+		font-size: 1.4rem;
+
+		&:hover {
+			color: $green;
+		}
+	}
+
+	.menu__link-pdf {
+		font-size: 1.4rem;
 	}
 }

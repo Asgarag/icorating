@@ -31,6 +31,7 @@
 	margin-bottom: 1rem;
 	font-size: 4.2rem;
 	color: $green;
+	font-weight: 100;
 }
 
 .about__wrapper {
@@ -47,6 +48,7 @@
 	display: inline-block;
 	font-weight: 400;
 	text-decoration: none;
+	box-shadow: 0 0 20px 7px rgba(9, 12, 18, 0.3);
 }
 
 @media (max-width: 534px) {
