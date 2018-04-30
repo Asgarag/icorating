@@ -73,7 +73,7 @@
 		}
 
 		&:not(:first-child):not(:last-child) {
-			border-bottom: 2px solid $green;
+			border-bottom: 2px solid #202c38;
 		}
 	}
 
@@ -81,12 +81,11 @@
 		display: block;
 		padding: 2rem;
 		font-size: 1.8rem;
-		color: $green;
+		color: $white;
 
 		&:hover,
 		&:focus {
 			background-color: $green;
-			color: $white;
 		}
 	}
 
@@ -106,6 +105,12 @@
 		fill: $white;
 	}
 
+	.menu__close-icon {
+		width: 20px;
+		height: 20px;
+		fill: $white;
+	}
+
 	.menu__close {
 		position: absolute;
 		right: 0;
@@ -113,14 +118,10 @@
 		transform: translateY(-50%);
 
 		&:hover, &:focus {
-			opacity: .8;
+			.menu__close-icon {
+				fill: $green;
+			}
 		}
-	}
-
-	.menu__close-icon {
-		width: 20px;
-		height: 20px;
-		fill: $green;
 	}
 }
 

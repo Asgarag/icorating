@@ -6,7 +6,7 @@
 }
 
 .preview__container {
-	background: url("../images/background.png") no-repeat;
+	background: url("../images/background.png") no-repeat right 25px top;
 	position: relative;
 }
 
@@ -17,10 +17,6 @@
 .preview__slogan-text {
 	display: block;
 	font-weight: 700;
-
-	&:not(:last-child) {
-		margin-bottom: 2.5rem;
-	}
 }
 
 @media (max-width: 669px) {
@@ -42,11 +38,15 @@
 	}
 
 	.preview__pre-sale {
-		bottom: -191px;
+		bottom: -205px;
 	}
 
 	.preview {
 		margin-bottom: 26rem;
+	}
+
+	.preview__slogan-text:not(:last-child) {
+		margin-bottom: 1.5rem;
 	}
 }
 
@@ -61,6 +61,10 @@
 
 	.preview__pre-sale {
 		padding: 3.5rem 4rem;
+	}
+
+	.preview__slogan-text:not(:last-child) {
+		margin-bottom: 2.5rem;
 	}
 }
 
@@ -105,6 +109,7 @@
 	.preview__container {
 		display: flex;
 		align-items: center;
+		justify-content: flex-end;
 	}
 
 	.preview__pre-sale {
@@ -114,10 +119,6 @@
 	.preview__img {
 		left: -48px;
 		top: -12%;
-	}
-
-	.preview__slogan {
-		margin-left: 34rem;
 	}
 
 	.preview {

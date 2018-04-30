@@ -29,7 +29,7 @@
 
 		&:hover,
 		&:focus {
-			background: darken($green, 20%);
+			background: $green-dark;
 		}
 
 		.button__underline-text {

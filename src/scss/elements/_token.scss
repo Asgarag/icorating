@@ -7,6 +7,7 @@
 .token__sale {
 	position: relative;
 	padding: 1rem 3rem;
+	height: 80px;
 	background-color: $light-black;
 	display: flex;
 	flex-direction: column;
@@ -21,8 +22,10 @@
 		content: '';
 		position: absolute;
 		top: 50%;
-		right: -93px;
+		right: -86px;
 		transform: translateY(-50%);
+		border: 41px solid transparent;
+		border-left: 45px solid $light-black;
 	}
 }
 
@@ -55,15 +58,6 @@
 
 	.token__buy-time {
 		display: none;
-	}
-
-	.token__sale {
-		height: 77px;
-
-		&::after {
-			border: 38px solid transparent;
-			border-left: 55px solid $light-black;
-		}
 	}
 }
 
@@ -112,14 +106,5 @@
 		flex-direction: column;
 		align-items: center;
 		width: 36%;
-	}
-
-	.token__sale {
-		height: 100px;
-
-		&::after {
-			border: 51px solid transparent;
-			border-left: 43px solid $light-black;
-		}
 	}
 }
