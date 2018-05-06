@@ -1,0 +1,27 @@
+@import "../variables";
+
+.timer {
+	display: flex;
+}
+
+.timer__item {
+	text-align: center;
+	text-shadow: 0.1px 2px 18.1px rgba(9, 12, 18, 0.24);
+	font-weight: 400;
+
+	&:not(:last-child) {
+		margin-right: 1.8rem;
+	}
+}
+
+.timer__value {
+	display: block;
+	margin-bottom: .5rem;
+	font-size: 4rem;
+}
+
+.timer__name {
+	display: block;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+}

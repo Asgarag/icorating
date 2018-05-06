@@ -12,37 +12,9 @@
 	font-size: 1.4rem;
 }
 
-.pre-sale__time {
-	display: flex;
-}
-
-.pre-sale__time-item {
-	text-align: center;
-	text-shadow: 0.1px 2px 18.1px rgba(9, 12, 18, 0.24);
-	font-weight: 400;
-
-	&:not(:last-child) {
-		margin-right: 1.5rem;
-	}
-}
-
-.pre-sale__time-number {
-	display: block;
-	margin-bottom: .5rem;
-	font-size: 4rem;
-}
-
-.pre-sale__time-name {
-	display: block;
-	text-transform: uppercase;
-	font-size: 1.4rem;
-}
-
-.pre-sale__link {
+.pre-sale__button {
 	border-radius: 3px;
 	font-weight: 400;
-	display: inline-block;
-	text-decoration: none;
 }
 
 @media (max-width: 669px) {
@@ -54,7 +26,7 @@
 		margin-bottom: 3rem;
 	}
 
-	.pre-sale__link {
+	.pre-sale__button {
 		font-size: 1.4rem;
 	}
 }
@@ -69,13 +41,13 @@
 		justify-content: center;
 	}
 
-	.pre-sale__link {
+	.pre-sale__button {
 		font-size: 1.8rem;
 	}
 }
 
 @media (max-width: 1169px) {
-	.pre-sale__link {
+	.pre-sale__button {
 		padding: 2rem 6rem;
 	}
 
@@ -90,7 +62,7 @@
 		margin-bottom: 3rem;
 	}
 
-	.pre-sale__link {
+	.pre-sale__button {
 		font-size: 1.6rem;
 		padding: 2rem 2.5rem 2rem 2.4rem;
 	}

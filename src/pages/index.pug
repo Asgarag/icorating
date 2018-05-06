@@ -74,22 +74,10 @@ block content
 				span.preview__slogan-text Exciting perspectives
 			div.pre-sale.preview__pre-sale
 				div.pre-sale__inner
-					span.pre-sale__name Till pre-sale end
-					div.pre-sale__time
-						div.pre-sale__time-item
-							span.pre-sale__time-number 10
-							span.pre-sale__time-name days
-						div.pre-sale__time-item
-							span.pre-sale__time-number 19
-							span.pre-sale__time-name hours
-						div.pre-sale__time-item
-							span.pre-sale__time-number 34
-							span.pre-sale__time-name min
-						div.pre-sale__time-item
-							span.pre-sale__time-number 15
-							span.pre-sale__time-name sec
-				a.button.button--green.pre-sale__link(href="#")
-					span Buy tokens at
+					span.pre-sale__name Till pre-sale start
+					div.timer.pre-sale__time
+				button.button.button--green.pre-sale__button(type="button")
+					span Grab tokens at
 					span.button__underline-text 0.1 ETH
 	div.container
 		section.section.about#about
@@ -167,21 +155,9 @@ block content
 						span.token__sale-text Sell on the stock exchange
 						span.token__sale-date (this summer)
 				div.token__buy
-					div.token__buy-time
-						div.token__buy-time-item
-							span.token__buy-time-number 10
-							span.token__buy-time-name days
-						div.token__buy-time-item
-							span.token__buy-time-number 19
-							span.token__buy-time-name hours
-						div.token__buy-time-item
-							span.token__buy-time-number 34
-							span.token__buy-time-name min
-						div.token__buy-time-item
-							span.token__buy-time-number 15
-							span.token__buy-time-name sec
-					a.button.button--green.button--small.token__buy-link(href="#")
-						span Buy token right now at
+					div.timer.token__buy-time
+					button.button.button--green.button--small.token__buy-button(type="button")
+						span Grab token at
 						span.button__underline-text 0.1 ETH
 		section.section.token-sale#token-sale
 			h2.title.section__title.token-sale__title Token sale stages
@@ -212,7 +188,7 @@ block content
 					div.token-sale__goal
 						span.token-sale__goal-text Goal
 						span.token-sale__goal-amount 1500 ETH
-		section.section.distribution
+		div.section.distribution
 			article.token-distribution.distribution__token-distribution#token-distribution
 				h2.title.section__title.token-distribution__title Token distribution
 				span.token-distribution__supply Total supply

@@ -43,17 +43,24 @@
 
 @media (max-width: 477px) {
 	.road__down-icon {
-		left: 47%;
+		left: 144px;
 	}
+
+	.road__stage-container {
+		width: 120px;
+		flex-shrink: 0;
+	}
+
 }
 
 @media (min-width: 478px) and (max-width: 899px) {
 	.road__stage-container {
-		width: 203px;
+		width: 180px;
+		flex-shrink: 0;
 	}
 
 	.road__down-icon {
-		left: 50%;
+		left: 48%;
 	}
 }
 

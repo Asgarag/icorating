@@ -45,14 +45,10 @@
             </picture>
             <div class="preview__slogan"><span class="preview__slogan-text">Работающий проект</span><span class="preview__slogan-text">Real team</span><span class="preview__slogan-text">Exciting perspectives</span></div>
             <div class="pre-sale preview__pre-sale">
-              <div class="pre-sale__inner"><span class="pre-sale__name">Till pre-sale end</span>
-                <div class="pre-sale__time">
-                  <div class="pre-sale__time-item"><span class="pre-sale__time-number">10</span><span class="pre-sale__time-name">days</span></div>
-                  <div class="pre-sale__time-item"><span class="pre-sale__time-number">19</span><span class="pre-sale__time-name">hours</span></div>
-                  <div class="pre-sale__time-item"><span class="pre-sale__time-number">34</span><span class="pre-sale__time-name">min</span></div>
-                  <div class="pre-sale__time-item"><span class="pre-sale__time-number">15</span><span class="pre-sale__time-name">sec</span></div>
-                </div>
-              </div><a class="button button--green pre-sale__link" href="#"><span>Buy tokens at</span><span class="button__underline-text">0.1 ETH</span></a>
+              <div class="pre-sale__inner"><span class="pre-sale__name">Till pre-sale start</span>
+                <div class="timer pre-sale__time"></div>
+              </div>
+              <button class="button button--green pre-sale__button" type="button"><span>Grab tokens at</span><span class="button__underline-text">0.1 ETH</span></button>
             </div>
           </div>
         </div>
@@ -209,12 +205,8 @@
                 <div class="token__sale"><span class="token__sale-text">Sell on the stock exchange</span><span class="token__sale-date">(this summer)</span></div>
               </div>
               <div class="token__buy">
-                <div class="token__buy-time">
-                  <div class="token__buy-time-item"><span class="token__buy-time-number">10</span><span class="token__buy-time-name">days</span></div>
-                  <div class="token__buy-time-item"><span class="token__buy-time-number">19</span><span class="token__buy-time-name">hours</span></div>
-                  <div class="token__buy-time-item"><span class="token__buy-time-number">34</span><span class="token__buy-time-name">min</span></div>
-                  <div class="token__buy-time-item"><span class="token__buy-time-number">15</span><span class="token__buy-time-name">sec</span></div>
-                </div><a class="button button--green button--small token__buy-link" href="#"><span>Buy token right now at</span><span class="button__underline-text">0.1 ETH</span></a>
+                <div class="timer token__buy-time"></div>
+                <button class="button button--green button--small token__buy-button" type="button"><span>Grab token at</span><span class="button__underline-text">0.1 ETH</span></button>
               </div>
             </div>
           </section>
@@ -243,14 +235,14 @@
               </div>
             </div>
           </section>
-          <section class="section distribution">
+          <div class="section distribution">
             <article class="token-distribution distribution__token-distribution" id="token-distribution">
               <h2 class="title section__title token-distribution__title">Token distribution</h2><span class="token-distribution__supply">Total supply<span class="token-distribution__supply-amount">10 000 000 VTS</span></span><img class="token-distribution__diagram" src="images/tokens.png" alt="Token diagram">
             </article>
             <article class="funds-distribution distribution__funds-distribution" id="funds-distribution">
               <h2 class="title section__title funds-distribution__title">Funds distribution</h2><img class="funds-distribution__diagram" src="images/funds.png" alt="Funds diagram">
             </article>
-          </section>
+          </div>
           <section class="section road" id="road">
             <h2 class="title section__title road__title">Road map</h2>
             <div class="road__container">
@@ -349,6 +341,19 @@
         </div>
         <div class="footer__copyright"><span class="footer__copyright-text">© 2017–2018 Fundery</span></div>
       </footer>
+      <div class="modal modal--xl">
+        <div class="modal__box">
+          <div class="modal__inner">
+            <button class="button modal__close">close modal</button>
+            <form class="modal__form" name="question" method="post" action="#">
+              <label class="field field--xl field--white field--hidden-hint modal__field"><span class="field__hint">Email</span>
+                <input class="field__input modal__input" name="email" type="email" placeholder="Email" required>
+              </label>
+              <button class="button button--green button--small modal__button">I want to know about the start of sale</button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="js/index.js"></script>
   </body>

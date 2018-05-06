@@ -15,7 +15,6 @@
 			background-color: #162029;
 			color: $gray;
 			border: 2px solid #162029;
-			border-radius: 3px;
 
 			&:focus {
 				border-color: $green;
@@ -23,9 +22,27 @@
 		}
 	}
 
+		&--white {
+			.field__input {
+				background-color: #f2f2f2;
+				color: $gray;
+
+				&:focus {
+					border-color: $green;
+				}
+			}
+	}
+
 	&--l {
 		.field__input {
 			padding: 1rem;
+			border-radius: 3px;
+		}
+	}
+
+	&--xl {
+		.field__input {
+			padding: 1.5rem;
 			border-radius: 3px;
 		}
 	}
@@ -39,7 +56,7 @@
 .field__input {
 	box-sizing: border-box;
 	width: 100%;
-	border: 2px solid $gray;
+	border: 1px solid $gray;
 	font-family: inherit;
 	appearance: none;
 	transition: border-color 0.25s;
