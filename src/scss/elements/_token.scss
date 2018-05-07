@@ -13,19 +13,10 @@
 	flex-direction: column;
 	justify-content: center;
 	box-sizing: border-box;
+	box-shadow: .1px 2px 18.1px 2.9px rgba(9,12,18,.24);
 
 	&:not(:last-child) {
 		margin-bottom: 2rem;
-	}
-
-	&::after {
-		content: '';
-		position: absolute;
-		top: 50%;
-		right: -86px;
-		transform: translateY(-50%);
-		border: 41px solid transparent;
-		border-left: 45px solid $light-black;
 	}
 }
 
@@ -44,10 +35,31 @@
 	font-size: 1.6rem;
 }
 
+.token__sale-triangle {
+	height: 100px;
+	overflow: hidden;
+	position: absolute;
+	right: -100px;
+	top: 0;
+	width: 100px;
+
+	&::after {
+		background: #202c38;
+		box-shadow: .1px 2px 18.1px 2.9px rgba(9,12,18,.24);
+		content: "";
+		height: 58px;
+		position: absolute;
+		right: 71px;
+		top: 10px;
+		transform: rotate(45deg);
+		width: 58px;
+	}
+}
+
 @media (max-width: 909px) {
 
 	.token__sales {
-		width: calc(100% - 80px);
+		width: calc(100% - 85px);
 		margin-bottom: 3rem;
 	}
 
